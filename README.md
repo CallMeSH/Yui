@@ -13,6 +13,31 @@ On a View Controller deallocation, its `Coordinator` will self-destruct by telli
 
 This flexible architecture lets you implement any kind of navigation in your app (`UINavigationController`, `UITabBarController`, Embeded View Controller…).
 
+## Installation
+### CocoaPods
+
+To integrate Yui into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'Yui', '~> 0.1.0'
+```
+
+Then, run the following command:
+
+```bash
+pod install
+```
+
+### Carthage
+
+To integrate Yui into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "CallMeSH/Yui" ~> 0.1.0
+```
+
+Run `carthage update` to build the framework and drag the built `Yui.framework` into your Xcode project.
+
 ## Implementing Coordinators with Yui
 
 Using Yui is as simple as conforming to the `Coordinator` protocol.
