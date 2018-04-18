@@ -1,6 +1,6 @@
 # Yui: Use Coordinators, avoid reference cycles.
 
-Coordinator pattern is a great way to add reusability to View Controllers by extracting the navigation logic into a separate object. To learn more about this concept, you should read this article on KHANLOU’s amazing blog.
+Coordinator pattern is a great way to add reusability to View Controllers by extracting the navigation logic into a separate object. To learn more about this concept, you should read this article on [KHANLOU’s amazing blog](http://khanlou.com/2015/01/the-coordinator/).
 
 But Coordinator, if not implemented well, can lead to massive memory leaks due to zombie Coordinators and View Controllers.
 
@@ -69,7 +69,7 @@ A demonstration project is included in the demo `Example` directory of the proje
 It implements both a tab bar and a navigation controller-based app architecture. This should inspire you for your next project.
 
 ## Contributing
-Yui’s source code is fairly simple and uses the Objective-C Runtime for now as Swift does not have a concept of lifetime(link to rust doc).
+Yui’s source code is fairly simple and uses the Objective-C Runtime for now as Swift does not have a concept of [lifetime](https://doc.rust-lang.org/1.17.0/book/lifetimes.html).
 We are always looking for better ways to do things. If you think you could bring some improvements to make the library better, we would be happy to review your Pull Request or Request For Change!
 
 ## Work In Progress
