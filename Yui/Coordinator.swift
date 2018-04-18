@@ -1,9 +1,9 @@
 import UIKit
 
 public protocol Coordinator: DeinitDelegate, CoordinatorCompletionDelegate {
-    weak var completionDelegate: CoordinatorCompletionDelegate? { get set }
+    var completionDelegate: CoordinatorCompletionDelegate? { get set }
     
-    weak var presentedController: UIViewController? { get }
+    var presentedController: UIViewController? { get }
     
     func start(animated: Bool)
 
