@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Yui'
-  s.version = '0.1.0'
+  s.version = '0.2.0'
   s.license = 'MIT'
   s.summary = 'Use Coordinators, avoid reference cycles'
   s.homepage = 'https://github.com/CallMeSH/Yui/'
