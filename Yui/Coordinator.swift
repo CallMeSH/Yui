@@ -16,10 +16,12 @@ public extension Coordinator {
     func addChild(_ coordinator: Coordinator) {
         coordinator.completionDelegate = self
         
-        let deinitToken = YuiDeinitToken()
-        deinitToken.deinitDelegate = coordinator
-        coordinator.presentedController!.deinitToken = deinitToken
-        
+        if let controller = coordinator.presentedController {
+            let deinitToken = YuiDeinitToken()
+            deinitToken.deinitDelegate = coordinator
+            controller.deinitToken = deinitToken
+        }
+
         childCoordinators.append(coordinator)
     }
     
